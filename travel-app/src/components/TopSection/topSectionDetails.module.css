@@ -1,0 +1,55 @@
+.typography1 {
+    color: #E97458;
+    font-family: "Inter";
+    text-transform: "uppercase";
+    font-weight: 700;
+}
+
+.typography2 {
+    color: "#FFF";
+    font-family: "Volkhov";
+    font-size: "80px";
+    font-weight: 700;
+    line-height: "100px";
+    letter-spacing: "-3.2px";
+}
+
+.typography3 {
+    color: "rgba(255, 255, 255, 0.70)";
+    font-family: "Inter, sans-serif";
+    font-size: "24px";
+    font-weight: 400;
+    line-height: "35px";
+    letter-spacing: "-0.96px";
+    width: "100%";
+}
+
+.galleryBtn {
+    color: "#FFF";
+    font-family: "Inter, sans-serif";
+    font-size: "14px";
+    font-weight: 400;
+    line-height: "180%";
+    letter-spacing: "0.36px";
+    margin: "5px";
+    text-transform: "none";
+}
+
+.destinationBtn {
+    display: "inline-flex";
+    padding: "16px 24px";
+    justify-content: "center";
+    align-items: "center";
+    gap: "14px";
+    border-radius: "100px";
+    text-transform: "none";
+    font-weight: "bold";
+    color: "#0C111F";
+    background:
+            "var(--l-2, linear-gradient(135deg, #F9EC7D 0%, #F5B100 100%))",
+}
+
+#Button2 {
+  /* CSS styles for the element with the specified ID */
+  background-color: #E97458;
+}

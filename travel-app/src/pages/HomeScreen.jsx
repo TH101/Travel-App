@@ -1,16 +1,17 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
 import { Height } from "@mui/icons-material";
-import NavBar from "@/components/NavBar";
+// import NavBar from "@/components/NavBar1";
 import Grid from "@mui/material/Grid";
 import mainImage from "../assets/images/mainImage.png";
-import TopSectionDetails from "@/components/TopSectionDetails";
-import TestNavBar from "@/components/TestNavBar";
+import TopSectionDetails from "@/components/TopSection/TopSectionDetails";
+import NavBar from "@/components/NavBar";
+import SecondSection from "@/components/SecondSection";
+import SecondSectionDetails from "@/components/SecondSectionDetails";
 
 const HomeScreen = () => {
   return (
     <Box>
-      {/* Top Section with Black Background */}
       <Box
         sx={{
           backgroundColor: "#0C111F",
@@ -22,21 +23,20 @@ const HomeScreen = () => {
       >
         <Grid container spacing={2}>
           <Grid item xs={12}>
-                      <NavBar />
-                      {/* <TestNavBar /> */}
+            <NavBar />
           </Grid>
-          {/* <Grid item xs={4}>
-            <h1>2</h1>
-          </Grid>
-          <Grid item xs={4}>
-            <h1>3</h1>
-          </Grid> */}
+
           <Grid item xs={12} md={6}>
             <Box sx={{ margin: "20%", width: "80%" }}>
               <TopSectionDetails />
             </Box>
           </Grid>
-          <Grid item xs={12} md={6}>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{ display: { xs: "none", md: "block" } }}
+          >
             <Box sx={{ marginLeft: "20%" }}>
               <img
                 src="https://res.cloudinary.com/de9zkpp0w/image/upload/v1690446713/thilini/Group_48095510_odtoo3.png"
@@ -50,11 +50,18 @@ const HomeScreen = () => {
       </Box>
 
       {/* Section 2 */}
-      <Box sx={{ backgroundColor: "white", color: "black", padding: "40px 0" }}>
-        <Container>
-          <Typography variant="h1">Section 2</Typography>
-          {/* Add content for section 2 here */}
-        </Container>
+      <Box sx={{ backgroundColor: "white", padding: "40px 0" }}>
+        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+          <Grid item xs={12} md={6}>
+            <SecondSectionDetails />
+          </Grid>
+          <Grid item xs={12} md={6}>
+            2
+          </Grid>
+          <Grid item xs={12}>
+            <SecondSection />
+          </Grid>
+        </Grid>
       </Box>
 
       {/* Section 3 */}
