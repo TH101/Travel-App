@@ -1,13 +1,14 @@
 import React from "react";
 import { Box, Container, Typography } from "@mui/material";
 import { Height } from "@mui/icons-material";
-// import NavBar from "@/components/NavBar1";
 import Grid from "@mui/material/Grid";
 import mainImage from "../assets/images/mainImage.png";
-import TopSectionDetails from "@/components/TopSection/TopSectionDetails";
+import TopSectionDetails from "@/components/TopSectionDetails";
 import NavBar from "@/components/NavBar";
 import SecondSection from "@/components/SecondSection";
 import SecondSectionDetails from "@/components/SecondSectionDetails";
+import DestinationCard from "@/components/DestinationCard";
+import DestinationCardDetails from "@/components/DestinationCardDetails";
 
 const HomeScreen = () => {
   return (
@@ -53,10 +54,11 @@ const HomeScreen = () => {
       <Box sx={{ backgroundColor: "white", padding: "40px 0" }}>
         <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid item xs={12} md={6}>
+            {/* <DestinationCard /> */}
             <SecondSectionDetails />
           </Grid>
           <Grid item xs={12} md={6}>
-            2
+            <DestinationCardDetails />
           </Grid>
           <Grid item xs={12}>
             <SecondSection />

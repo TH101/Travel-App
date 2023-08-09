@@ -1,0 +1,57 @@
+/* NavBarStyles.css */
+.navbar-root {
+  background-color: #0c111f !important;
+}
+
+.logoBox {
+  margin-right: 10px !important;
+  margin-left: 70px !important;
+}
+
+.mobileLogoBox {
+  margin-right: 10px !important;
+}
+
+.navItemsBox {
+  flex-grow: 1 !important;
+}
+
+.mobileNavItemsBox {
+  flex-grow: 1 !important;
+
+}
+
+.menuIcon {
+  font-size: large !important;
+  color: inherit !important;
+}
+
+.navMenuItem {
+  margin-top: 2px !important;
+  color: white !important;
+  display: block !important;
+  font-size: 16px !important;
+}
+
+.registerButton {
+  color: #fff !important;
+  text-transform: none !important;
+  margin: 5px !important;
+  font-size: 16px !important;
+}
+
+.loginButton {
+  width: 121px !important;
+  height: 47px !important;
+  padding: 10px 25px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  gap: 10px !important;
+  border-radius: 100px !important;
+  background: #fff !important ;
+  color: #0d0e25 !important;
+  text-transform: none !important;
+  font-size: 16px !important;
+  font-weight: bold !important;
+  margin-right: 70px !important;
+}
